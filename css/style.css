@@ -1,0 +1,391 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+    font-family: 'Inter', sans-serif;
+}
+header{
+    background: linear-gradient(to right, black, rgb(54, 46, 46));
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 0px;
+
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
+.nav{
+    display:flex;
+    justify-content: flex-end;
+    width: 100%;
+    
+}
+.nav__navBar{
+    list-style-type: none;
+    display:flex;
+    justify-content: flex-end;
+    width: 100%;
+    
+    
+}
+.navBar__navItem{
+    display:flex;
+    justify-content: flex-end;
+    margin: 0px 0px;
+    padding: 10px 20px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.navLink{
+    text-decoration: none;
+    color: whitesmoke;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.navLink:hover{
+    box-shadow: 0px 2px 0px tomato;
+    transform: scale(1.2);
+}
+.find{
+    display: inline-block;
+    margin: 0px;
+    padding: 5px;
+}
+/*MAIN-PRESENTACION INDEX*/
+.imgPpal{
+    background-image: url(../img/room.jpg);
+    background-color:white;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.introBloque{
+    background: rgb(15, 117, 107);
+    padding: 50px;
+    margin: 0px;
+}
+.intro{
+    text-align: center;
+}
+.intro__tit{
+    color: white;
+    font-size: 60px;
+    font-weight: 800;
+    padding-bottom: 30px;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+@keyframes aparecer{
+    from{
+        margin-right: 100%;
+        width: 400%;
+    }
+    to {
+        margin-right: 0%;
+        width: 100%;
+    }
+}
+
+
+.intro__txt{
+    color: black;
+    font-size: 20px;
+    line-height:  30px;
+    padding-bottom: 30px ;
+}
+.intro__txt--fuerte{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/*PRESENTACION PRODUCTOS*/
+
+.productoBloque{
+    text-align: center;
+    padding: 30px;
+    margin: auto;
+    
+}
+.introProd__tit{
+    color: blanchedalmond;
+    padding-bottom: 30px ;
+    font-size: 50px;
+    font-weight: 700;
+
+}
+.introProd__tit--anima{
+    animation-duration: 10s;
+    animation-name: anima;
+    animation-iteration-count: infinite;
+}
+@keyframes anima{
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.introProd__txt{
+    color: cadetblue;
+    font-size: 25px;
+    font-style: italic;
+}
+.contProd{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;    
+}
+.prod{
+    margin: 20px;
+    max-width: 300px;
+    padding: 20px;
+    
+}
+.prod__txt{
+    position:relative;
+    padding-top: 10px;
+    text-align: center;
+    color: rgb(54, 184, 189);
+    
+}
+.prodImg__princ{
+    padding-bottom: 5px;
+    margin: 0px;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ;
+    transition: 3s;
+}
+
+.prodImg--hover:hover {
+    transform:scale(1.1,1.1);
+
+}
+
+.prod__link{
+    position: relative;
+    left: 95px;
+    
+}
+
+
+/*FOOTER*/
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 0px;
+
+}
+
+.containerFoot{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0;
+    background: linear-gradient(to bottom, rgb(31, 131, 117), rgb(68, 54, 54));
+
+}
+
+
+
+.foot__menu{
+    list-style-type: none;
+    
+}
+.foot__item{
+    display: inline-block;
+    margin: 0px 0px;
+    padding: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    
+    
+    
+}
+.foot__link{
+    text-decoration: none;
+    color:black;
+    
+}    
+.foot__link--hover:hover{
+    box-shadow: 0px 2px 0px tomato;
+    color: rgb(238, 233, 226);
+    font-weight: lighter;
+
+} 
+
+
+
+/*LATEX*/
+
+.imgPpalLatex{
+    background-image: url(../img/latexppal.jpg);
+    background-color: black;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.prodBox{
+    border-bottom: 2px solid blanchedalmond;
+}
+/*grid presentacion de la linea*/
+.productoBloque--back{
+    text-align: center;
+    padding: 30px;
+    margin: auto;
+    background: rgb(15, 117, 107);
+    
+}
+.introProd__tit--pag{
+    color: blanchedalmond;
+    padding-bottom: 0px ;
+    font-size: 50px;
+    font-weight: 700;
+}
+.containerProd{
+    display: grid;
+    background-color:black;
+    width: auto;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: auto;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    justify-items: stretch;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: space-evenly;
+    
+}
+.prodImg{
+    padding-bottom: 5px;
+    margin: 0px;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ;
+}
+
+.prodTit{
+    text-align: center;
+    
+}
+.prodTit__ppal{
+    color: rgb(9, 102, 107);
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+
+}
+
+.prodTit__sub{
+    color: rgb(192, 137, 137);
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+    
+}
+.icono{
+    position: relative;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+.prodTit__desc{
+    line-height: 25px;
+    text-align: justify;
+    color:azure;
+}
+.ajuste{
+    position: relative;
+    padding-top: 40px;
+}
+
+
+
+/*SINTETICO*/
+.imgPpalSint{
+    background-image: url(../img/sintppal.jpg);
+    background-color:white;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.ajuste--sint{
+    position: relative;
+    padding-top: 70px;
+}
+
+
+/*PISOS*/
+.imgPpalPisos{
+    background-image: url(../img/pisosppal.jpg);
+    background-color:white;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.ajuste2{
+    position: relative;
+    padding-top: 75px;
+
+}
+
+/*CONTACTO*/
+.imgPpalCont{
+    background-image: url(../img/contactoppal.jpg);
+    background-color:white;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.form{
+    max-width: 800px;
+    padding: 80px;
+    margin: 20px;
+
+}
+.form__tit{
+    color: whitesmoke;
+    font-size: 30px;
+    padding: 15px;
+
+}
+.form__etiq{
+    color: white;
+    font-size: 14px;
+    
+}
+.form__leg--tit{
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+    
+}
+
