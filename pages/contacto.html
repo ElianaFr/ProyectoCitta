@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="../img/faviconcircular.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header><!--header------------------->
+        <div class="container">
+            <nav class="nav">
+                <a href="../index.html">
+                    <img src="../img/logocitta.png" alt="Citta" class="navBar__navItem--logo"></a>
+                <ul class="nav__navBar">
+                    <li class="navBar__navItem"><a href="../index.html" class="navLink">Inicio</a></li>
+                    <li class="navBar__navItem"><a href="../pages/latex.html" class="navLink">Latex</a></li>
+                    <li class="navBar__navItem"><a href="../pages/sintetico.html" class="navLink">Sintético</a></li>
+                    <li class="navBar__navItem"><a href="../pages/pisosypiscinas.html" class="navLink">Pisos y Piscinas</a></li>
+                    <li class="navBar__navItem"><a href="../pages/contacto.html" class="navLink">Contacto</a></li>
+                </ul> 
+                <div class="find">
+                    <input type="search" name="Buscar" placeholder="Buscar">
+                </div>       
+            </nav>
+        </div>
+    </header>
+<!--imagen de corte-->
+    <div class="imgPpalCont"></div>
+<!--formulario-->
+    <form action="" class="form">
+        <fieldset>            
+            <form>
+                <select name="areas">
+                    <option value="general">Seleccione una opción</option>
+                    <option value="comercial">Area comercial</option>
+                    <option value="venta">Puntos de venta</option>
+                    <option value="general">Información general</option>
+                </select>
+            </form>
+            <legend>
+                <h1 class="form__tit">Contactate con nosotros:</h1>
+            </legend>
+            <br>
+            <br>
+            <label for="nombre" class="form__etiq">Nombre:</label>
+            <br>
+            <input type="text" name="nombre" id="nombre">
+            <br>
+            <br>
+            <label for="email" class="form__etiq">Email:</label>
+            <br>
+            <input type="email" name="email" placeholder="">
+            <br>
+            <br>
+            <label for="provincia" class="form__etiq">Provincia/Localidad:</label>
+            <br>
+            <input type="text" name="provincia" id="provincia">
+            <br>
+            <br>
+            <legend class="form__leg--tit">Consulta:</legend>
+            <textarea placeholder="Escriba su mensaje..." name="mensaje" id="Comentario" rows="20" cols="50"></textarea>
+        <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar formulario">
+            <br>
+            <br>
+            <div>
+                <p class="form__etiq"><input type="checkbox" name="Aceptar" value="1">
+                    Deseo recibir información de nuevos productos.</p>
+            </div>
+
+
+        </fieldset>
+    </form>
+    <br>
+    <footer>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#00cba9" fill-opacity="0.5" d="M0,128L9.6,112C19.2,96,38,64,58,48C76.8,32,96,32,115,37.3C134.4,43,154,53,173,58.7C192,64,211,64,230,106.7C249.6,149,269,235,288,256C307.2,277,326,235,346,224C364.8,213,384,235,403,218.7C422.4,203,442,149,461,138.7C480,128,499,160,518,160C537.6,160,557,128,576,128C595.2,128,614,160,634,197.3C652.8,235,672,277,691,261.3C710.4,245,730,171,749,154.7C768,139,787,181,806,197.3C825.6,213,845,203,864,165.3C883.2,128,902,64,922,48C940.8,32,960,64,979,80C998.4,96,1018,96,1037,112C1056,128,1075,160,1094,181.3C1113.6,203,1133,213,1152,229.3C1171.2,245,1190,267,1210,277.3C1228.8,288,1248,288,1267,245.3C1286.4,203,1306,117,1325,85.3C1344,53,1363,75,1382,74.7C1401.6,75,1421,53,1430,42.7L1440,32L1440,320L1430.4,320C1420.8,320,1402,320,1382,320C1363.2,320,1344,320,1325,320C1305.6,320,1286,320,1267,320C1248,320,1229,320,1210,320C1190.4,320,1171,320,1152,320C1132.8,320,1114,320,1094,320C1075.2,320,1056,320,1037,320C1017.6,320,998,320,979,320C960,320,941,320,922,320C902.4,320,883,320,864,320C844.8,320,826,320,806,320C787.2,320,768,320,749,320C729.6,320,710,320,691,320C672,320,653,320,634,320C614.4,320,595,320,576,320C556.8,320,538,320,518,320C499.2,320,480,320,461,320C441.6,320,422,320,403,320C384,320,365,320,346,320C326.4,320,307,320,288,320C268.8,320,250,320,230,320C211.2,320,192,320,173,320C153.6,320,134,320,115,320C96,320,77,320,58,320C38.4,320,19,320,10,320L0,320Z"></path></svg>
+        <div class="containerFoot">
+            <div>
+                <ul class="foot__menu">
+                    <li class="foot__item"><a href="./index.html"><img src="https://img.icons8.com/ios/30/000000/facebook--v1.png"  target="_blank" class="foot__link foot__link--hover"/></a></li>
+                    <li class="foot__item"><a href="./index.html"><img src="https://img.icons8.com/ios/30/000000/instagram-new--v1.png" target="_blank" class="foot__link foot__link--hover"/></a></li>
+                    <li class="foot__item"><a href="./pages/contacto.html" ><img src="https://img.icons8.com/ios/30/000000/address-book.png" target="_blank" class="foot__link foot__link--hover"></a></li>
+                </ul>
+                
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
