@@ -4,11 +4,13 @@
     box-sizing: border-box;
 }
 body{
-    background: black;
+    /*background: black;*/
+    background: white;
     font-family: 'Inter', sans-serif;
 }
 header{
-    background: linear-gradient(to right, black, rgb(54, 46, 46));
+    /*background: linear-gradient(to right, black, rgb(54, 46, 46));*/
+    background: linear-gradient(to left, rgb(150, 219, 240), white);
     position: sticky;
     top: 0;
     z-index: 1;
@@ -18,7 +20,7 @@ header{
 .container{
     display: flex;
     flex-wrap: wrap;
-    
+    width: 100%;
 
 }
 .nav{
@@ -38,29 +40,33 @@ header{
 .navBar__navItem{
     display:flex;
     justify-content: flex-end;
-    margin: 0px 0px;
-    padding: 10px 20px;
+    margin: 12px 0px 0px 20px;
+    /*margin: 0px 0px;
+    padding: 10px 20px;*/
     font-size: 11px;
     font-weight: 600;
 }
 
 .navLink{
     text-decoration: none;
-    color: whitesmoke;
+    /*color: whitesmoke;*/
+    color: rgb(80, 80, 80);
     letter-spacing: 2px;
     text-transform: uppercase;
+    opacity: 0.5;
 }
 .navLink:hover{
-    box-shadow: 0px 2px 0px tomato;
+    /*box-shadow: 0px 2px 0px tomato;*/
+    opacity: 1.5;
     transform: scale(1.2);
 }
 .find{
     display: inline-block;
-    margin: 0px;
+    margin: 3px;
     padding: 5px;
 }
 /*MAIN-PRESENTACION INDEX*/
-.imgPpal{
+/*.imgPpal{
     background-image: url(../img/room.jpg);
     background-color:white;
     height: 400px;
@@ -68,12 +74,55 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+}*/
+.slider{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    
+
+
 }
-.introBloque{
-    background: rgb(15, 117, 107);
+.sliderMenu{
+    display:flex;    
+    width: 400%;
+    
+    animation: loop 10s infinite alternate;
+    animation-timing-function: ease-in;
+
+}
+@keyframes loop{
+    0% { margin-left: 0;}
+    0% { margin-left: 0;}
+    25% {margin-left: -100% ;}
+    45% {margin-left: -100% ;}
+    50% {margin-left: -200% ;}
+    70%{margin-left: -200% ;}
+    75% {margin-left: -300%;}
+    100%{margin-left: -300% ;}
+
+}
+.sliderItem{
+    width: 100%;
+    list-style-type: none;
+
+}
+.sliderFoto{
+    width: 100%;
+
+}
+
+/*.introBloque{
+    /*background: rgb(15, 117, 107);
     padding: 50px;
     margin: 0px;
+}*/
+.introBloque{
+    background: rgb(99, 204, 194);
+    padding: 10px;
+    margin: -4px;
 }
+
 .intro{
     text-align: center;
 }
@@ -139,7 +188,8 @@ header{
     }
 }
 .introProd__txt{
-    color: cadetblue;
+    /*color: cadetblue;*/
+    color: rgb(123, 108, 209);
     font-size: 25px;
     font-style: italic;
 }
@@ -158,8 +208,9 @@ header{
     position:relative;
     padding-top: 10px;
     text-align: center;
-    color: rgb(54, 184, 189);
-    
+    /*color: rgb(54, 184, 189);
+    */
+    color: rgb(150, 175, 40);
 }
 .prodImg__princ{
     padding-bottom: 5px;
@@ -170,11 +221,12 @@ header{
     border-top-left-radius: 10px ;
     border-top-right-radius: 10px ;
     transition: 3s;
+    opacity: 1;
 }
 
 .prodImg--hover:hover {
     transform:scale(1.1,1.1);
-
+    opacity: 0.5;
 }
 
 .prod__link{
@@ -195,10 +247,13 @@ footer{
 
 .containerFoot{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 0;
-    background: linear-gradient(to bottom, rgb(31, 131, 117), rgb(68, 54, 54));
+    justify-content:flex-end;
+    margin: -4px;
+    /*background: linear-gradient(to bottom, rgb(31, 131, 117), rgb(68, 54, 54));
+*/
+    background: linear-gradient(to bottom, rgb(142, 247, 255), rgb(220, 226, 222));
 
 }
 
@@ -206,29 +261,47 @@ footer{
 
 .foot__menu{
     list-style-type: none;
-    
+    display:flex;
+    justify-content: flex-end;
 }
 .foot__item{
-    display: inline-block;
+    /*display: inline-block;
     margin: 0px 0px;
     padding: 50px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 600;*/
+    display:flex;
+    justify-content: flex-end;
+    margin: 10px;
+    padding: 10px;
     
     
     
 }
 .foot__link{
     text-decoration: none;
-    color:black;
+    /*color:black;*/
+    opacity: 0.75;
     
 }    
 .foot__link--hover:hover{
-    box-shadow: 0px 2px 0px tomato;
+    
+    /*box-shadow: 0px 2px 0px tomato;
     color: rgb(238, 233, 226);
     font-weight: lighter;
+*/
+    opacity: 1;
+    transform: scale(1,1.1);
 
 } 
+.marca{
+    color: black;
+    text-align: center;
+    font-size: 8px;
+    font-weight: 100;
+    margin-top: 2px;
+    
+}
 
 
 
@@ -236,7 +309,8 @@ footer{
 
 .imgPpalLatex{
     background-image: url(../img/latexppal.jpg);
-    background-color: black;
+    /*background-color: black;*/
+    background-color: white;
     height: 400px;
     background-position: center;
     background-repeat: no-repeat;
@@ -251,20 +325,39 @@ footer{
     text-align: center;
     padding: 30px;
     margin: auto;
-    background: rgb(15, 117, 107);
-    
+    /*background: rgb(15, 117, 107);
+    */
+    background: rgb(38, 189, 174);
 }
 .introProd__tit--pag{
     color: blanchedalmond;
     padding-bottom: 0px ;
     font-size: 50px;
     font-weight: 700;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
 }
+@keyframes aparecer{
+    from{
+        margin-left: 100%;
+        width: 400%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
 .containerProd{
-    display: grid;
-    background-color:black;
+    display: grid;/*
+    background-color:black;*/
+    background-color: white;
     width: auto;
-    grid-template-columns: 300px 300px 300px;
+    /*grid-template-columns: 300px 300px 300px;*/
+    grid-template-columns: repeat(auto-fill, minmax(300px,300px));
+
     grid-template-rows: auto;
     grid-column-gap: 50px;
     grid-row-gap: 50px;
@@ -313,7 +406,8 @@ footer{
 .prodTit__desc{
     line-height: 25px;
     text-align: justify;
-    color:azure;
+    /*color:azure;*/
+    color: black;
 }
 .ajuste{
     position: relative;
@@ -356,7 +450,8 @@ footer{
 
 /*CONTACTO*/
 .imgPpalCont{
-    background-image: url(../img/contactoppal.jpg);
+    background-image: url(../img/pexels-anamul-rezwan-1216589.jpg);
+    /*background-image: url(../img/contactoppal.jpg);*/
     background-color:white;
     height: 400px;
     background-position: center;
@@ -364,26 +459,48 @@ footer{
     background-size: cover;
     position: relative;
 }
+.backForm{
+    background-image: url(../img/slide4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 0.75;
+    
+    padding-bottom: 1px;
+    
+}
+
 
 .form{
-    max-width: 800px;
+    /*max-width: 800px;
     padding: 80px;
     margin: 20px;
+*/
+    max-width: auto;
+    padding: 50px;
+    margin: 20px;
+    display:flex;
+    justify-content: center;
 
 }
 .form__tit{
-    color: whitesmoke;
+    /*color: whitesmoke;*/
+    color: rgb(250, 215, 162);
+
     font-size: 30px;
     padding: 15px;
 
 }
 .form__etiq{
-    color: white;
+    /*color: white;*/
+    color: black;
     font-size: 14px;
     
 }
 .form__leg--tit{
-    color: white;
+    /*color: white;*/
+    color: black;
     font-size: 14px;
     margin-bottom: 10px;
     
