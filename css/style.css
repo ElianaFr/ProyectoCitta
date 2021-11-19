@@ -8,8 +8,31 @@ body{
     background: white;
     font-family: 'Inter', sans-serif;
 }
+.navColor{
+    background: linear-gradient(to left, rgb(150, 219, 240), white);
+    
+}
+.menuBox:focus{
+    box-shadow: none;
+}
+.tipoTexto{
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    opacity: 0.80;
+}
+.tipoTexto:hover{
+    opacity: 0.5;
+    
+    transform: scale(1.2);
+}
+
+
+
+/* nav con css*/
+/*
 header{
-    /*background: linear-gradient(to right, black, rgb(54, 46, 46));*/
+    background: linear-gradient(to right, black, rgb(54, 46, 46));
     background: linear-gradient(to left, rgb(150, 219, 240), white);
     position: sticky;
     top: 0;
@@ -43,8 +66,8 @@ header{
     justify-content: flex-end;
     padding-top: 7px;
     margin: 12px 0px 0px 20px;
-    /*margin: 0px 0px;
-    padding: 10px 20px;*/
+    margin: 0px 0px;
+    padding: 10px 20px;
     font-size: 13px;
     font-weight: 600;
 
@@ -55,14 +78,14 @@ header{
 
 .navLink{
     text-decoration: none;
-    /*color: whitesmoke;*/
+    color: whitesmoke;
     color: rgb(80, 80, 80);
     letter-spacing: 2px;
     text-transform: uppercase;
     opacity: 0.5;
 }
 .navLink:hover{
-    /*box-shadow: 0px 2px 0px tomato;*/
+    box-shadow: 0px 2px 0px tomato;
     opacity: 1.5;
     transform: scale(1.2);
 }
@@ -71,6 +94,9 @@ header{
     margin: 3px;
     padding: 12px;
 }
+*/
+
+
 /*MAIN-PRESENTACION INDEX*/
 /*.imgPpal{
     background-image: url(../img/room.jpg);
@@ -81,6 +107,8 @@ header{
     background-size: cover;
     position: relative;
 }*/
+
+
 .slider{
     width: 100%;
     margin: auto;
