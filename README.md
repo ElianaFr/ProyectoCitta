@@ -1,2 +1,3 @@
 # ProyectoCitta
-![Presentacion](https://user-images.githubusercontent.com/93441362/142059781-75751bba-2d05-4c95-b51f-d8e1c033c2d5.png)
+![Presentacion](https://user-images.githubusercontent.com/93441362/142695992-292ea221-5460-4836-a4ff-3df652b83044.png)
+
