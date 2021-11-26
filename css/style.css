@@ -12,7 +12,11 @@ body{
     background: linear-gradient(to left, rgb(150, 219, 240), white);
     
 }
+.menuBox{
+    border: none;
+}
 .menuBox:focus{
+    
     box-shadow: none;
 }
 .tipoTexto{
@@ -490,6 +494,7 @@ footer{
     border-radius: 10px;
     max-width: 460px;
     margin-top: 5px;
+    margin-right:10px;
     margin-left: 15px;
     margin-bottom: 2px;
     padding-left: 30px;
@@ -510,6 +515,7 @@ footer{
     font-weight: 700;
 
 }
+
 
 .form__etiq{
     /*color: white;*/
