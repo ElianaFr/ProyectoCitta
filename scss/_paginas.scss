@@ -1,0 +1,83 @@
+.introProd{
+    text-align: center;
+    padding: 30px;
+    margin: auto;
+    background: $back-titulos;
+    &__tit--pag{
+        color: $color-tit;
+        padding-bottom: 0px ;
+        font-size: 50px;
+        font-weight: 700;
+        animation-duration: 2s;
+        animation-name: aparecer;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+    }
+    @keyframes aparecer{
+        from{
+            margin-left: 100%;
+            width: 400%;
+        }
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
+}
+.containerProd{
+    display: grid;
+    background: $back-primario;
+    width: auto;
+    grid-template-columns: repeat(auto-fill, minmax(300px,300px));
+    grid-template-rows: auto;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    justify-items: stretch;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: space-evenly;
+    
+}
+.prodBox{
+    border-bottom: 2px solid blanchedalmond;
+}
+.prodImg{
+    padding-bottom: 5px;
+    margin: 0px;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ;
+}
+.prodTit{
+    text-align: center;
+    &__ppal{
+        color: $color-prodTit ;
+        font-size: 20px;
+        padding: 10px;
+        font-weight: bolder;
+        letter-spacing: 1px;
+    }
+    &__sub{
+        color: $color-prodSec;
+        font-style: $font-prodSec;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    &__desc{
+        line-height: 25px;
+        text-align: justify;
+        color: $color-prodDesc;
+    }
+}
+.icono{
+    position: relative;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+.ajuste{
+    position: relative;
+    padding-top: 40px;
+}
+
