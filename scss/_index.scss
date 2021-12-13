@@ -36,20 +36,7 @@
         font-size: $size-tit;
         font-weight: $weight-tit;
         padding-bottom: $padd-bottom;
-        animation-duration: 2s;
-        animation-name: aparecer;
-        animation-iteration-count: 1;
-        animation-direction: alternate;
-    }
-    @keyframes aparecer{
-        from{
-            margin-right: 100%;
-            width: 400%;
-        }
-        to {
-            margin-right: 0%;
-            width: 100%;
-        }
+        
     }
     &__txt{
         color: black;
@@ -68,29 +55,18 @@
     margin: auto;
 }
 .introProd__tit{
-    color: blanchedalmond;
-    padding-bottom: 30px ;
+    color: rgb(238, 207, 160);
+    padding-bottom: 20px ;
+    padding-top: 30px;
     font-size: 50px;
     font-weight: 700;
-    &--anima{
-        animation-duration: 2s;
-        animation-name: anima;
-        animation-iteration-count: infinite;
-    }
-    @keyframes anima{
-        50%{
-            opacity: 0;
-        }
-        100%{
-            opacity: 1;
-        }
-    }
     
 }
 .introProd__txt{
-    color: rgb(123, 108, 209);
+    color: rgb(26, 161, 143);
     font-size: 25px;
     font-style: italic;
+    font-weight: 700;
 }
 .prod__txt{
     text-align:right;
@@ -136,8 +112,6 @@
     transform: rotateY(180deg);
     padding-top: 160px;
 }
-
-
 .boton{
     font-size: medium;
     font-weight: 800;
@@ -153,7 +127,7 @@ footer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:flex-start;
+    justify-content:center;
     margin: 1px;
     background: linear-gradient(to bottom, rgb(142, 247, 255), rgb(220, 226, 222));
 }
@@ -168,10 +142,10 @@ footer{
     }
     &__link{
         text-decoration: none;
-        opacity: 0.5;
+        opacity: 1;
     }
     &__link--hover:hover{
-        opacity: 1;
+        opacity: 0.5;
         transform: scale(1,1.1);
     }
 }
