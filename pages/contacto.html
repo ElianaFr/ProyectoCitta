@@ -92,7 +92,7 @@
 <!--formulario-->
 <div class="back">
     <div class="p-4">
-        <form action="" class="form p-4">
+        <form action="https://formsubmit.co/pinturascitta@hotmail.com" method="POST" class="form p-4">
             <fieldset  class="m-0 p-1">            
                 <legend>
                     <h1 class="form__tit">Contactate con nosotros:</h1>
@@ -105,7 +105,7 @@
                 </select>
                 <div class="mb-3 mt-3">
                     <label for="nombre" class="form-label form__etiq">Nombre:</label>
-                    <input class="form-control" type="text" placeholder="Nombre" aria-label="default input example">
+                    <input class="form-control" type="text" name="nombre" placeholder="Nombre" aria-label="default input example">
                 </div>
                 <div class="mb-3 mt-3">
                     <label for="email" class="form-label form__etiq">E-mail:</label>
@@ -113,14 +113,14 @@
                 </div>
                 <div class="mb-3">
                     <label for="pwd" class="form-label form__etiq">Provincia/Localidad:</label>
-                    <input class="form-control" type="text" placeholder="Provincia/Localidad" aria-label="default input example">
+                    <input class="form-control" type="text" name="Pcia/Localidad" placeholder="Provincia/Localidad" aria-label="default input example">
                 </div>
                 <legend class="form__etiq">Consulta:</legend>
-                <textarea placeholder="Escriba su mensaje..." class="form-control pt-2 " id="exampleFormControlTextarea1" rows="5" ></textarea>
+                <textarea placeholder="Escriba su mensaje..." class="form-control pt-2 " id="exampleFormControlTextarea1" rows="5" name="mensaje"></textarea>
                 <button type="submit" class="btn m-2 btn-primary">Enviar</button>
                 <button type="reset" class="btn btn-secondary">Limpiar formulario</button>
                 <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        <input class="form-check-input" type="checkbox" name="checkbox" role="switch" id="flexSwitchCheckDefault">
                         <label class="form-check-label" for="flexSwitchCheckDefault">Deseo recibir información de nuevos productos</label>
                 </div>
             </fieldset>
