@@ -28,14 +28,13 @@
     display: grid;
     background: $back-primario;
     width: auto;
+    justify-content: center;
     grid-template-columns: repeat(auto-fill, minmax(300px,300px));
     grid-template-rows: auto;
     grid-column-gap: 50px;
     grid-row-gap: 50px;
-    justify-items: stretch;
     padding-top: 50px;
     padding-bottom: 50px;
-    justify-content: space-evenly;
     
 }
 .prodBox{
