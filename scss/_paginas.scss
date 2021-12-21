@@ -1,8 +1,12 @@
-.introProd{
-    text-align: center;
-    padding: 20px;
-    margin: auto;
+@mixin intro($text-align, $padding, $margin){
+    text-align: $text-align ;
+    padding: $padding ;
+    margin: $margin;
     background: $back-titulos;
+}
+.introProd{
+    @include intro(center, 20px, auto);
+    
     &__tit--pag{
         color: $color-tit;
         padding-bottom: 0px ;
