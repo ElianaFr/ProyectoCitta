@@ -228,10 +228,6 @@ footer {
   padding-bottom: 50px;
 }
 
-.prodBox {
-  border-bottom: 2px solid blanchedalmond;
-}
-
 .prodImg {
   padding-bottom: 5px;
   margin: 0px;
@@ -273,6 +269,14 @@ footer {
 .ajuste {
   position: relative;
   padding-top: 40px;
+}
+
+.efectoCard {
+  opacity: 0.8;
+}
+.efectoCard:hover {
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 .form {
