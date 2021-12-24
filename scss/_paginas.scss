@@ -12,20 +12,6 @@
         padding-bottom: 0px ;
         font-size: 50px;
         font-weight: 700;
-        animation-duration: 2s;
-        animation-name: aparecer;
-        animation-iteration-count: 1;
-        animation-direction: alternate;
-    }
-    @keyframes aparecer{
-        from{
-            margin-left: 100%;
-            width: 400%;
-        }
-        to {
-            margin-left: 0%;
-            width: 100%;
-        }
     }
 }
 .containerProd{
